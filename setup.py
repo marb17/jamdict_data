@@ -29,7 +29,7 @@ def _unpack_db():
             with open(TARGET_DB, "wb") as out:
                 out.write(db_content)
             # delete the xz file
-            os.unlink(ZIPPED_DB)
+        os.unlink(ZIPPED_DB)
 
 
 class InstallUnpackDatabase(install):
@@ -119,4 +119,5 @@ setup(
                  'Topic :: Text Processing :: Linguistic',
                  'Topic :: Software Development :: Libraries :: Python Modules']
 )
+
 
